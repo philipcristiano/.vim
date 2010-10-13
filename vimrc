@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set tabstop=4
 set softtabstop=4
 set expandtab  
@@ -22,3 +25,5 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
+
+
