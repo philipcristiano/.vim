@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/philipc/svn/packages/python-aw-feed-monitor-comparison'
+let g:netrw_dirhist_2='/Users/philipc/gits/dinger'
+let g:netrw_dirhist_3='/Users/philipc/gits/apachedisco/cli/apache_disco.egg-info'
+let g:netrw_dirhist_4='/Users/philipc/svn/trunk/code/sites/aweber_app'
+let g:netrw_dirhist_5='/Users/philipc/svn/packages/python-nagios-check'
+let g:netrw_dirhist_6='/Users/philipc/svn/packages/python-nagios-check/trunk'
+let g:netrw_dirhist_7='/Users/philipc/svn/packages/python-pkgconfig/trunk/examples/sample'
+let g:netrw_dirhist_8='/Users/philipc/svn/teams/api/oauth-plugin/oauth_plugin'
