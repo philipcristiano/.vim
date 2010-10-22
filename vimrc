@@ -12,6 +12,7 @@ autocmd FileType make setlocal noexpandtab
 setlocal spell spelllang=en_us
 set nospell
 
+syntax on
 
 colorscheme slate
 
