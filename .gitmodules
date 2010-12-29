@@ -7,3 +7,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/scmdiff"]
+	path = bundle/scmdiff
+	url = https://github.com/ghewgill/vim-scmdiff.git
