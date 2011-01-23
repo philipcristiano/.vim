@@ -1,15 +1,16 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab  
-set number
 set autoindent
-set smarttab
-set incsearch
+set expandtab  
 set hlsearch
+set incsearch
+set number
+set shiftwidth=4
+set smarttab
+set smartindent
+set softtabstop=4
+set tabstop=4
 autocmd FileType make setlocal noexpandtab
 setlocal spell spelllang=en_us
 set nospell
