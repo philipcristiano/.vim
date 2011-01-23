@@ -20,7 +20,7 @@ syntax on
 colorscheme slate
 
 " Trim trailing whitespace on save
-autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Turn on omnicomplete 
 filetype plugin on
@@ -43,7 +43,7 @@ highlight TrailingWhitespace ctermbg=red ctermfg=white guibg=#592929
 match TrailingWhitespace /\s\+$/
 
 " Nerdtree shouldn't show pyc files
-let NERDTreeIgnore=['\.pyc']   
+let NERDTreeIgnore=['\.pyc']
 
 " Show trailing whitepace and spaces before a tab:
 :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
