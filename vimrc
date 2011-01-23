@@ -38,6 +38,10 @@ autocmd FileType python compiler pylint
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
+" Highlight trailing whitespace
+highlight TrailingWhitespace ctermbg=red ctermfg=white guibg=#592929
+match TrailingWhitespace /\s\+$/
+
 " Nerdtree shouldn't show pyc files
 let NERDTreeIgnore=['\.pyc']   
 
