@@ -1,3 +1,4 @@
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -5,6 +6,7 @@ set autoindent
 set expandtab
 set hlsearch
 set incsearch
+set nocompatible
 set number
 set shiftwidth=4
 set smarttab
@@ -14,6 +16,8 @@ set tabstop=4
 autocmd FileType make setlocal noexpandtab
 setlocal spell spelllang=en_us
 set nospell
+
+
 
 syntax on
 
@@ -29,7 +33,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
-""" Python specific """
+" Python specific
 autocmd FileType python compiler pylint
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
