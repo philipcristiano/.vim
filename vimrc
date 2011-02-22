@@ -34,7 +34,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " Python specific
-autocmd FileType python compiler pylint
+autocmd FileType python compiler nose
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
