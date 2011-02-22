@@ -48,6 +48,20 @@ autocmd FileType python compiler nose
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+"Notify on common syntax errors
+syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
+syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
+syn match pythonError "^\s*for\s.*[^:]$" display
+syn match pythonError "^\s*except\s*$" display
+syn match pythonError "^\s*finally\s*$" display
+syn match pythonError "^\s*try\s*$" display
+syn match pythonError "^\s*else\s*$" display
+syn match pythonError "^\s*else\s*[^:].*" display
+syn match pythonError "^\s*if\s.*[^\:]$" display
+syn match pythonError "^\s*except\s.*[^\:]$" display
+syn match pythonError "[;]$" display
+syn keyword pythonError         do
+
 " Long line highlighting
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
