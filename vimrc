@@ -25,6 +25,16 @@ colorscheme slate
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePost * silent make!
+
+" Open the quickfix window
+cope
+
+" Fonts
+set guifont=Menlo\ Regular:h12
+
+" Open the quickfix window
+"autocmd BufWritePost botright cope 2
 
 " Turn on omnicomplete
 filetype plugin on
@@ -51,3 +61,8 @@ let NERDTreeIgnore=['\.pyc']
 
 " Show trailing whitepace and spaces before a tab:
 :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" Don't want backup files
+set nobackup
+set nowritebackup
+set noswapfile

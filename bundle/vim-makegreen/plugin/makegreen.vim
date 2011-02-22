@@ -33,7 +33,7 @@ function MakeGreen(...) "{{{1
   if has('unix')
     set shellpipe=&> "quieter make output
   endif
-  silent! exec "make " . make_args
+  silent! exec "make! " . make_args
   let &shellpipe = s:old_sp
 
   redraw!
