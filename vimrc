@@ -17,15 +17,13 @@ autocmd FileType make setlocal noexpandtab
 setlocal spell spelllang=en_us
 set nospell
 
-
-
 syntax on
 
 colorscheme slate
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufWritePost * silent make!
+autocmd BufWritePost python silent make!
 
 " Open the quickfix window
 cope
