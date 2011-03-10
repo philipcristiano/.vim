@@ -64,6 +64,10 @@ syn keyword pythonError         do
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
+set cc=+1  " highlight column after 'textwidth'
+hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+
+
 " Highlight trailing whitespace
 highlight TrailingWhitespace ctermbg=red ctermfg=white guibg=#592929
 match TrailingWhitespace /\s\+$/
