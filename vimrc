@@ -23,7 +23,9 @@ colorscheme slate
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufWritePost python silent make!
+
+autocmd! BufWritePost
+autocmd BufWritePost *.py silent make!
 
 " Open the quickfix window
 cope
