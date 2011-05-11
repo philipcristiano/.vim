@@ -1,4 +1,5 @@
 
+filetype plugin off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -19,13 +20,16 @@ set nospell
 
 syntax on
 
+" Code Folding
+set foldmethod=indent
+set foldlevel=99
+
 colorscheme slate
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-autocmd! BufWritePost
-autocmd BufWritePost *.py silent make!
+"autocmd BufWritePost *.py silent make!
 
 " Open the quickfix window
 cope
@@ -44,7 +48,8 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " Python specific
-autocmd FileType python compiler nose
+autocmd FileType python compiler pylint
+" autocmd FileType python compiler nose
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
@@ -66,7 +71,7 @@ syn keyword pythonError         do
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
-set cc=+1  " highlight column after 'textwidth'
+set cc=80  " highlight 80th column'
 hi ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 
