@@ -97,3 +97,5 @@ set noswapfile
 set wildmode=longest,list,full
 set wildmenu
 
+" Map gundotoggle to F5
+nnoremap <F5> :GundoToggle<CR>
