@@ -99,3 +99,9 @@ set wildmenu
 
 " Map gundotoggle to F5
 nnoremap <F5> :GundoToggle<CR>
+
+if version >= 730
+    set undofile
+    set undodir=~/.vimundo
+endif
+
