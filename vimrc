@@ -15,6 +15,8 @@ set smartindent
 set softtabstop=4
 set tabstop=4
 set scrolloff=5               " keep at least 5 lines above/below
+set noerrorbells              " Turn off error bell
+
 
 " Fix backspace
 set bs=2
