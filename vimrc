@@ -34,9 +34,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 "autocmd BufWritePost *.py silent make!
 
-" Open the quickfix window
-cope
-
 " Fonts
 set guifont=Menlo\ Regular:h12
 
@@ -74,8 +71,11 @@ syn keyword pythonError         do
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
-set cc=80  " highlight 80th column'
-hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+
+if version >= 730
+    autocmd FileType python set cc=80
+    hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+endif
 
 
 " Highlight trailing whitespace
