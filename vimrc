@@ -106,3 +106,9 @@ if version >= 730
     set undofile
     set undodir=~/.vimundo
 endif
+
+if v:version >= 700
+  " Enable spell check for text files
+  autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
+  autocmd BufNewFile,BufRead *.markdown setlocal spell spelllang=en
+endif
