@@ -71,7 +71,7 @@ syn keyword pythonError         do
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
-
+" color coloumn 80 for Python
 if version >= 730
     autocmd FileType python set cc=80
     hi ColorColumn ctermbg=darkgrey guibg=darkgrey
