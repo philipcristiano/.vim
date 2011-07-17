@@ -5,7 +5,8 @@ call pathogen#helptags()
 set autoindent
 set expandtab
 set hlsearch
-set incsearch
+set incsearch                 " incremental search
+set ignorecase                " search ignoring case
 set nocompatible
 set number
 set shiftwidth=4
@@ -13,6 +14,7 @@ set smarttab
 set smartindent
 set softtabstop=4
 set tabstop=4
+set scrolloff=5               " keep at least 5 lines above/below
 
 " Fix backspace
 set bs=2
@@ -104,4 +106,3 @@ if version >= 730
     set undofile
     set undodir=~/.vimundo
 endif
-
