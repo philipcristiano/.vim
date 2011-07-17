@@ -7,8 +7,8 @@ set expandtab
 set hlsearch
 set incsearch                 " incremental search
 set ignorecase                " search ignoring case
-set nocompatible
-set number
+set nocompatible              " Don't behave like VI
+set number                    " Line numbers
 set shiftwidth=4
 set smarttab
 set smartindent
