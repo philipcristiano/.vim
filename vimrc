@@ -17,9 +17,6 @@ set tabstop=4
 set scrolloff=5               " keep at least 5 lines above/below
 set noerrorbells              " Turn off error bell
 
-" Move as expected with wrapped lines
-inoremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
 " Fix backspace
 set bs=2
 
