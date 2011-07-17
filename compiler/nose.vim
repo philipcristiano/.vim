@@ -23,4 +23,4 @@ CompilerSet efm=%f:%l:\ fail:\ %m,%f:%l:\ error:\ %m
 "" Set nose as default compiler
 " CompilerSet makeprg=nosetests
 " Quite ugly but this make it ignore vim-makegreen passing argument for now
-CompilerSet makeprg=echo\ $*\ >/dev/null;\ bin/nosetests\ --machine-out\ --nologcapture
+CompilerSet makeprg=echo\ $*\ >/dev/null;\ bin/nosetests\ --with-machineout\ --nologcapture

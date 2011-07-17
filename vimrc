@@ -13,6 +13,10 @@ set smarttab
 set smartindent
 set softtabstop=4
 set tabstop=4
+
+" Fix backspace
+set bs=2
+
 autocmd FileType make setlocal noexpandtab
 setlocal spell spelllang=en_us
 set nospell
@@ -66,7 +70,7 @@ syn keyword pythonError         do
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
-set cc=+1  " highlight column after 'textwidth'
+set cc=80
 hi ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 
