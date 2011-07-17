@@ -1,4 +1,3 @@
-
 filetype plugin off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -93,3 +92,8 @@ let NERDTreeIgnore=['\.pyc']
 set nobackup
 set nowritebackup
 set noswapfile
+
+" Bash-like filenames
+set wildmode=longest,list,full
+set wildmenu
+
