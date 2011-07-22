@@ -113,4 +113,5 @@ if version >= 700
   autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
   autocmd BufNewFile,BufRead *.rst setlocal spell spelllang=en
   autocmd BufNewFile,BufRead *.markdown setlocal spell spelllang=en
+  autocmd BufNewFile,BufRead *.wiki setlocal spell spelllang=en
 endif
