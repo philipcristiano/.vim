@@ -1,3 +1,5 @@
+autocmd!
+
 filetype plugin off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -35,13 +37,14 @@ colorscheme slate
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-"autocmd BufWritePost *.py silent make!
+" autocmd BufWritePost *.py silent make!
 
 " Fonts
 set guifont=Menlo\ Regular:h12
 
 " Open the quickfix window
-"autocmd BufWritePost botright cope 2
+autocmd BufWritePost *.py :botright cope 5
+autocmd QuickFixCmdPost *.py :botright cope 5
 
 " Turn on omnicomplete
 filetype plugin on
@@ -51,7 +54,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " Python specific
-autocmd FileType python compiler pylint
+" autocmd FileType python compiler pylint
 " autocmd FileType python compiler nose
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -79,7 +82,6 @@ if version >= 730
     autocmd FileType python set cc=80
     hi ColorColumn ctermbg=darkgrey guibg=darkgrey
 endif
-
 
 " Highlight trailing whitespace
 highlight TrailingWhitespace ctermbg=red ctermfg=white guibg=#592929
