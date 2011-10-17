@@ -121,3 +121,9 @@ endif
 " F3 inserts datetime
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
+
+" Erlang options
+
+ErlangEnableShowErrors         " Check syntax on save
+let erlang_highlight_bif = 1    " Highlight built in functions
+let erlang_skel_header = '{"author": {name}, "owner" : {owner}}'
