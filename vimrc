@@ -115,6 +115,7 @@ if version >= 700
   autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en
   autocmd BufNewFile,BufRead *.rst setlocal spell spelllang=en
   autocmd BufNewFile,BufRead *.markdown setlocal spell spelllang=en
+  autocmd BufNewFile,BufRead *.md setlocal spell spelllang=en
   autocmd BufNewFile,BufRead *.wiki setlocal spell spelllang=en
 endif
 
@@ -124,6 +125,6 @@ imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
 
 " Erlang options
 
-ErlangEnableShowErrors         " Check syntax on save
+"ErlangEnableShowErrors         " Check syntax on save
 let erlang_highlight_bif = 1    " Highlight built in functions
 let erlang_skel_header = '{"author": {name}, "owner" : {owner}}'
