@@ -83,6 +83,18 @@ if version >= 730
     hi ColorColumn ctermbg=darkgrey guibg=darkgrey
 endif
 
+"
+" Ruby
+"
+
+autocmd FileType ruby setlocal tabstop=2
+
+"
+" Vagrant
+"
+"
+autocmd BufNewFile,BufRead Vagrantfile setf ruby
+
 " Highlight trailing whitespace
 highlight TrailingWhitespace ctermbg=red ctermfg=white guibg=#592929
 match TrailingWhitespace /\s\+$/
