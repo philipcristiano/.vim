@@ -122,6 +122,9 @@ set wildmenu
 " Map gundotoggle to F5
 nnoremap <F5> :GundoToggle<CR>
 
+" Last yanked item will be moved to register 'a' with '\ma'
+noremap <leader>ma :let @a=@<CR>
+
 if version >= 730
     set undofile
     set undodir=~/.vimundo
