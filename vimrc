@@ -137,8 +137,8 @@ if version >= 700
 endif
 
 " CtrlP
-map <Leader>P :CtrlP<CR>
-imap <Leader>P :CtrlP<CR>
+map <Leader>p :CtrlP<CR>
+imap <Leader>p :CtrlP<CR>
 
 " F3 inserts datetime
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
