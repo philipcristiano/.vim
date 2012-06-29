@@ -59,6 +59,11 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" Ruby specific
+autocmd FileType ruby set tabstop=2
+autocmd FileType ruby set shiftwidth=2
+autocmd FileType ruby set softtabstop=2
+
 "Notify on common syntax errors
 syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
 syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
