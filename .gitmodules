@@ -22,6 +22,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/tsaleh/vim-matchit.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://github.com/wincent/Command-T.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git

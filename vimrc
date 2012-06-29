@@ -131,8 +131,9 @@ if version >= 700
   autocmd BufNewFile,BufRead *.wiki setlocal spell spelllang=en
 endif
 
-" CommandT
-let g:CommandTMaxHeight=5
+" CtrlP
+map <Leader>P :CtrlP<CR>
+imap <Leader>P :CtrlP<CR>
 
 " F3 inserts datetime
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
