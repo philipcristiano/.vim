@@ -67,6 +67,11 @@ autocmd FileType ruby set tabstop=2
 autocmd FileType ruby set shiftwidth=2
 autocmd FileType ruby set softtabstop=2
 
+" PHP Specfic
+autocmd FileType php set tabstop=2
+autocmd FileType php set shiftwidth=2
+autocmd FileType php set softtabstop=2
+
 "Notify on common syntax errors
 syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
 syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
