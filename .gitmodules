@@ -31,3 +31,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = git://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = https://github.com/Shougo/unite.vim.git
