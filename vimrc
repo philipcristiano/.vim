@@ -2,6 +2,9 @@ autocmd!
 
 let $PYTHONPATH="/Library/Python/2.7/site-packages"
 
+" Use system clipboard
+set clipboard=unnamed
+
 filetype plugin off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -149,6 +152,8 @@ if version >= 700
   autocmd BufNewFile,BufRead *.wiki setlocal spell spelllang=en
 endif
 
+" Syntax Check
+map <Leader>c :SyntasticCheck<CR>
 " CtrlP
 map <Leader>p :CtrlP<CR>
 imap <Leader>p :CtrlP<CR>
