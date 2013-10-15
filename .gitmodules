@@ -37,3 +37,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/puppet-syntax"]
+	path = bundle/puppet-syntax
+	url = https://github.com/puppetlabs/puppet-syntax-vim.git
