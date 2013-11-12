@@ -53,6 +53,7 @@ autocmd QuickFixCmdPost *.py :botright cope 5
 
 " Turn on omnicomplete
 filetype plugin on
+autocmd BufNewFile,BufRead *.tac set filetype=python
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
