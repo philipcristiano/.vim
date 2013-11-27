@@ -176,7 +176,7 @@ nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file
 nnoremap <leader>r :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
 nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  -start-insert buffer<cr>
-nnoremap <C-p> :Unite file_rec/async <cr>
+nnoremap <C-p> :Unite -start-insert file_rec/async <cr>
 nnoremap <space>/ :Unite grep:. -no-split<cr>
 
 " Custom mappings for the unite buffer
