@@ -189,3 +189,5 @@ function! s:unite_settings()
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
 endfunction
 
+" Eclim
+let g:EclimFileTypeValidate = 1
