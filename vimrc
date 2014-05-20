@@ -56,6 +56,7 @@ filetype plugin on
 autocmd BufNewFile,BufRead *.tac set filetype=python
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType java let b:SuperTabDefaultCompletionType = "context"
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
