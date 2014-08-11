@@ -65,6 +65,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " autocmd FileType python compiler nose
 " indent again when ending any of these lines
 "autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd BufWritePost *.py call Flake8()
 autocmd FileType python set tabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set softtabstop=4
