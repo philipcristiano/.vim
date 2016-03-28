@@ -157,9 +157,16 @@ endif
 
 " Syntax Check
 map <Leader>c :SyntasticCheck<CR>
-" CtrlP
+
+""" CtrlP
+" Map usage
 map <Leader>p :CtrlP<CR>
 imap <Leader>p :CtrlP<CR>
+" Don't limit cache size
+let g:ctrlp_max_files=0
+" Use nearest .git directory as parent 'r', otherwise use cwd or parent
+" directory if this file isn't in cwd
+let g:ctrlp_working_path_mode = 'ra'
 
 " F3 inserts datetime
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
