@@ -21,7 +21,7 @@
 	url = git://github.com/tsaleh/vim-matchit.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = git://github.com/kien/ctrlp.vim.git
+	url = git://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/git.vim"]
 	path = bundle/git.vim
 	url = git://github.com/motemen/git-vim.git
