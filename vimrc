@@ -6,8 +6,7 @@ let $PYTHONPATH="/Library/Python/2.7/site-packages"
 set clipboard=unnamed
 
 filetype plugin off
-call pathogen#incubate()
-call pathogen#helptags()
+call pathogen#infect()
 
 set autoindent
 set expandtab
