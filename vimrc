@@ -80,6 +80,11 @@ autocmd FileType php set tabstop=2
 autocmd FileType php set shiftwidth=2
 autocmd FileType php set softtabstop=2
 
+" YAML Specfic
+autocmd FileType yaml set tabstop=2
+autocmd FileType yaml set shiftwidth=2
+autocmd FileType yaml set softtabstop=2
+
 "Notify on common syntax errors
 syn match pythonError "^\s*def\s\+\w\+(.*)\s*$" display
 syn match pythonError "^\s*class\s\+\w\+(.*)\s*$" display
