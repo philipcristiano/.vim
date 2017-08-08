@@ -220,3 +220,9 @@ highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Wh
 highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=White
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=White
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=White
+
+" Base 64 encode selection
+" http://stackoverflow.com/questions/7845671/executing-base64-decode-on-a-selection-in-vim
+:vnoremap <leader>64e c<c-r>=system('base64', @")<cr><esc>
+:vnoremap <leader>64d c<c-r>=system('base64 --decode', @")<cr><esc>
+
