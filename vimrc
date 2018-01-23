@@ -181,9 +181,9 @@ let g:ctrlp_max_files=0
 " directory if this file isn't in cwd
 let g:ctrlp_working_path_mode = 'ra'
 
-" F3 inserts datetime
-nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
-imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
+" Leader-d inserts datetime
+nmap <Leader>d <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
+imap <Leader>d <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
 
 " Erlang options
 
