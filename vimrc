@@ -227,5 +227,5 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Wh
 :vnoremap <leader>64d c<c-r>=system('base64 --decode', @")<cr><esc>
 
 " Insert date easily
-:nnoremap <leader>d "=strftime("%c")<CR>P
-:inoremap <leader>d <C-R>=strftime("%c")<CR>
+:nnoremap <leader>d "=strftime("%Y-%m-%d %H:%M:%S")<CR>P
+:inoremap <leader>d <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
