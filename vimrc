@@ -130,6 +130,11 @@ let NERDTreeIgnore=['\.pyc']
 " Show trailing whitepace and spaces before a tab:
 :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 
+
+" Ignore files / Nerdtree
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,*.beam
+let NERDTreeRespectWildIgnore=1
+
 " Don't want backup files
 set nobackup
 set nowritebackup
