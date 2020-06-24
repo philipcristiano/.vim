@@ -46,3 +46,9 @@
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim.git
+[submodule "bundle/vim-svelte"]
+	path = bundle/vim-svelte
+	url = https://github.com/evanleck/vim-svelte.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
