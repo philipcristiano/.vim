@@ -1,4 +1,3 @@
-Some requirements for the plugins I have:
+Clone to ~/.vimrc
 
-    python-bicyclerepair
-    py-ctags
+`git submodule update --init --recursive`
