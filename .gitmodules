@@ -18,10 +18,10 @@
 	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/git.vim"]
 	path = bundle/git.vim
-	url = git://github.com/motemen/git-vim.git
+	url = https://github.com/motemen/git-vim.git
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
-	url = git://github.com/derekwyatt/vim-scala.git
+	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
@@ -36,7 +36,7 @@
 	url = git@github.com:nvie/vim-flake8.git
 [submodule "bundle/surround"]
 	path = bundle/surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "/Users/philipcristiano/.vim/bundle/vim-go"]
 	path = /Users/philipcristiano/.vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
