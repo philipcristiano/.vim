@@ -165,6 +165,7 @@ endif
 " Syntax Check
 "
 " TODO: Use ALE
+let g:ale_lint_on_save = 1
 
 
 """ CtrlP
