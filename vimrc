@@ -163,6 +163,7 @@ endif
 let g:ale_lint_on_save = 1
 let g:ale_completion_enabled=1
 
+nmap <Leader>d :ALEGoToDefinition<CR>
 
 """ CtrlP
 " Map usage
@@ -173,10 +174,6 @@ let g:ctrlp_max_files=0
 " Use nearest .git directory as parent 'r', otherwise use cwd or parent
 " directory if this file isn't in cwd
 let g:ctrlp_working_path_mode = 'ra'
-
-" Leader-d inserts datetime
-nmap <Leader>d <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
-imap <Leader>d <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
 
 " Erlang options
 
@@ -220,5 +217,5 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Wh
 :vnoremap <leader>64d c<c-r>=system('base64 --decode', @")<cr><esc>
 
 " Insert date easily
-:nnoremap <leader>d "=strftime("%Y-%m-%d %H:%M:%S")<CR>P
-:inoremap <leader>d <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
+:nnoremap <leader>D "=strftime("%Y-%m-%d %H:%M:%S")<CR>P
+:inoremap <leader>D <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
