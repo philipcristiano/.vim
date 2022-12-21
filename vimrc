@@ -50,12 +50,7 @@ autocmd QuickFixCmdPost *.py :botright cope 5
 
 " Turn on omnicomplete
 filetype plugin on
-autocmd BufNewFile,BufRead *.tac set filetype=python
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType java let b:SuperTabDefaultCompletionType = "context"
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+set omnifunc=ale#completion#OmniFunc
 
 " Python specific
 " autocmd FileType python compiler pylint
@@ -166,6 +161,7 @@ endif
 "
 " TODO: Use ALE
 let g:ale_lint_on_save = 1
+let g:ale_completion_enabled=1
 
 
 """ CtrlP
