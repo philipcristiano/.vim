@@ -157,9 +157,7 @@ if version >= 700
   autocmd BufNewFile,BufRead *.wiki setlocal spell spelllang=en
 endif
 
-" Syntax Check
-"
-" TODO: Use ALE
+" ALE setup
 let g:ale_lint_on_save = 1
 let g:ale_completion_enabled=1
 
