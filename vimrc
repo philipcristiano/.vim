@@ -160,6 +160,7 @@ endif
 " ALE setup
 let g:ale_lint_on_save = 1
 let g:ale_completion_enabled=1
+let g:ale_fix_on_save =1
 
 nmap <Leader>d :ALEGoToDefinition<CR>
 
